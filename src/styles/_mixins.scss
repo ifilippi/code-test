@@ -1,0 +1,15 @@
+// Returns the value of the specified breakpoint
+// $breakpoint  : Name of the breakpoint
+// $breakpoints : Map of breakpoints
+$breakpoints: (
+  sm  : 576px,
+  md  : 768px,
+  lg  : 992px,
+  xl  : 1200px,
+);
+
+// Width
+@mixin on-view-min($breakpoint) {
+  $brk: map-get($breakpoints, $breakpoint);
+  @media (min-width: $brk) { @content; }
+}

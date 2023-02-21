@@ -1,0 +1,30 @@
+// This code is used to generate the grid used in the main content section of the
+// website. It is used to generate the grid on the home page and the grid used
+// in the "Search" page. It is used to generate a grid of tiles. It is used to
+// display the tiles in a 1x1 grid on small viewports, a 2x2 grid on medium
+// viewports, and a 4x4 grid on large viewports. This code is used to display
+// the grid on the homepage, the search page, and the category page.
+@import './_mixins';
+
+.custom-grid {
+  display: grid;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+
+  @include on-view-min(sm) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  @include on-view-min(md) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  @include on-view-min(lg) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}

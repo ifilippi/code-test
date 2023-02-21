@@ -1,0 +1,48 @@
+// The code below is a modal that will show a video when the user clicks on the video link
+// The modal is coded in CSS and the video is coded in JavaScript
+// The modal will be hidden until the user clicks on the video link
+// When the user clicks on the video link, the video will play
+// The video will be hidden when the user clicks on the close modal button
+// The close modal button will be visible until the user clicks on it
+
+// The modal will have the following properties:
+// The modal will be centered in the middle of the page
+// The modal will have a black background with a little opacity
+// The modal will have a close modal button in the top right corner of the modal
+// The modal will have a video player
+// The video player will have the following properties:
+// The video player will have a video
+// The video will be hidden until the user clicks on the video link
+// The video will be hidden when the user clicks on the close modal button
+// When the user clicks on the video link, the video will play
+
+.modal-video {
+  align-items: center;
+  background: #0c0c0cb5;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.close-modal {
+  background: #fff;
+  border-radius: 50%;
+  border: 0px;
+  box-shadow: 0px 3px 6px #f8f8f838;
+  color: #000;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  height: 50px !important;
+  line-height: 2rem;
+  position: absolute;
+  right: 1rem;
+  text-align: center;
+  top: 1rem;
+  width: 50px;
+}
